@@ -7,12 +7,12 @@ namespace BuilderPatternApp.WithBuilder
     public class Trip
     {
         public IList<ActivityType> Activities { get; }
-        public RestaurantType Lunch;
-        public RestaurantType Dinner;
-        public AccommodationType? Accommodation;
-        public TransportType Transport;
-        public ClientType Client;
-        public string TripName;
+        public RestaurantType Lunch { get; set; }
+        public RestaurantType Dinner { get; set; }
+        public AccommodationType? Accommodation { get; set; }
+        public TransportType Transport { get; set; }
+        public ClientType Client { get; set; }
+        public string TripName { get; set; }
 
         public Trip()
         {

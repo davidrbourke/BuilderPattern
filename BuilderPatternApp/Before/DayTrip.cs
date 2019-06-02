@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using BuilderPatternApp.Core;
 
 namespace BuilderPatternApp.Before
@@ -13,7 +12,6 @@ namespace BuilderPatternApp.Before
         private readonly AccommodationType? _accommodation;
         private readonly TransportType _transport;
         private readonly ClientType _client;
-
         public DayTrip(
             ActivityType morningActivity,
             RestaurantType lunch,

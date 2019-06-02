@@ -19,19 +19,19 @@ namespace BuilderPatternApp
                 ClientType.InternationalVisitor
             );
 
-            //dayTrip.Display();
+            dayTrip.Display();
 
-            var tripDirector = new TripDirector(new CulturedDayTripBuilder());
-            tripDirector.BuildTrip();
-            var culturedTrip = tripDirector.GetTrip();
+            //var tripDirector = new TripDirector(new CulturedDayTripBuilder());
+            //tripDirector.BuildTrip();
+            //var culturedTrip = tripDirector.GetTrip();
 
-            culturedTrip.Display();
+            //culturedTrip.Display();
 
-            var sportsTripDirector = new TripDirector(new SportDayLocalTripBuilder());
-            sportsTripDirector.BuildTrip();
-            var sportsTrip = sportsTripDirector.GetTrip();
+            //var sportsTripDirector = new TripDirector(new SportDayLocalTripBuilder());
+            //sportsTripDirector.BuildTrip();
+            //var sportsTrip = sportsTripDirector.GetTrip();
 
-            sportsTrip.Display();
+            //sportsTrip.Display();
         }
     }
 }
