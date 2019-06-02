@@ -1,5 +1,4 @@
-﻿using System;
-using BuilderPatternApp.Before;
+﻿using BuilderPatternApp.Before;
 using BuilderPatternApp.Core;
 using BuilderPatternApp.WithBuilder;
 
@@ -22,28 +21,17 @@ namespace BuilderPatternApp
 
             //dayTrip.Display();
 
-
-
             var tripDirector = new TripDirector(new CulturedDayTripBuilder());
             tripDirector.BuildTrip();
             var culturedTrip = tripDirector.GetTrip();
 
             culturedTrip.Display();
 
-
-
             var sportsTripDirector = new TripDirector(new SportDayLocalTripBuilder());
             sportsTripDirector.BuildTrip();
             var sportsTrip = sportsTripDirector.GetTrip();
 
             sportsTrip.Display();
-
-
-            var mixedDirector = new TripDirector(new MixedTripBuilder());
-            mixedDirector.BuildTrip();
-            var mixedTrip = mixedDirector.GetTrip();
-
-            mixedTrip.Display();
         }
     }
 }
